@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f4f7ff]">
+    <header class="flex bg-white shadow-md justify-between rounded-lg items-center p-[1.25rem] lg:mx-[8.75rem]">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="" srcset="">
+            <p class="text-[2rem] font-[300]">Dev <span class="font-[700]">Board</span></p>
+        </div>
+        <div>
+            <button id="GoBack" class="bg-[#3752fd] px-[0.5rem] py-[0.5rem] rounded-[0.5rem] cursor-pointer text-white">
+                Back to Desk
+            </button>
+        </div>
+    </header>
+
+    <main class="flex flex-col mt-5 max-sm:p-[1.5rem] lg:mx-[9rem]">
+        <h1 class="text-[2rem] font-bold text-center">Blog</h1>
+        <section class="bg-white p-[0.3rem] shadow-sm rounded-[0.5rem] mt-5">
+            <p class="text-[1.5rem] font-[500] border-b-[0.1rem] border-dashed border-gray-500 p-[0.125rem] rounded-[0.5rem]">
+                Question-1: What are the different ways to select an element in the DOM?
+            </p>
+            <p class="mt-4 text-[1.5rem] text-gray-500">
+                We can select DOM elements in many ways such as `document.getElementById`, `getElementsByClassName`,
+                `getElementsByName`, `querySelector`, and `querySelectorAll`. Using these, we can select elements and modify them as needed.
+            </p>
+        </section>
+        <section class="bg-white p-[0.5rem] shadow-sm rounded-[0.5rem] mt-5">
+            <p class="text-[1.5rem] font-[500] border-b-[0.0625rem] border-dashed border-gray-500 p-[0.125rem] rounded-[0.5rem]">
+                Question-2: What is the difference between innerHTML, innerText, and textContent?
+            </p>
+            <p class="mt-4 text-[1.5rem] text-gray-500">
+                `innerHTML` represents the content inside an HTML element, including tags.  
+                `innerText` returns only the visible text inside an element, ignoring hidden elements.  
+                `textContent` returns all text inside an element, including hidden elements.
+            </p>
+        </section>
+        <section class="bg-white p-[0.3125rem] shadow-sm rounded-[0.5rem] mt-5">
+            <p class="text-[1.5rem] font-[500] border-b-[0.0625rem] border-dashed border-gray-500 p-[0.125rem] rounded-[0.5rem]">
+                Question-3: What is event delegation in the DOM?
+            </p>
+            <p class="mt-4 text-[1.5rem] text-gray-500">
+                Event delegation allows us to assign a single event listener to a parent element, which then listens for events on its child elements.
+            </p>
+        </section>
+        <section class="bg-white p-[0.3125rem] shadow-sm rounded-[0.5rem] mt-5">
+            <p class="text-[1.5rem] font-[500] border-b-[0.0625rem] border-dashed border-gray-500 p-[0.125rem] rounded-[0.5rem]">
+                Question-4: What is event bubbling in the DOM?
+            </p>
+            <p class="mt-4 text-[1.5rem] text-gray-500">
+                Event bubbling is when an event on a child element triggers events on its parent elements unless `event.stopPropagation()` is used.
+            </p>
+        </section>
+        <section class="bg-white p-[0.3125rem] shadow-sm rounded-[0.5rem] mt-5">
+            <p class="text-[1.5rem] font-[500] border-b-[0.0625rem] border-dashed border-gray-500 p-[0.125rem] rounded-[0.5rem]">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </p>
+            <p class="mt-4 text-[1.5rem] text-gray-500">
+                You can use `appendChild()` to add elements and `removeChild()` to remove elements in JavaScript.
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const GoBack = document.getElementById("GoBack");
+        GoBack.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

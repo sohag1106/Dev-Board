@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "company": "ShopEase",
+    "task": "Fix Mobile Button Issue",
+    "description": "Debug using Chrome DevTools, check for overlapping elements.",
+    "deadline": "25 March 2025",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "company": "CloudSync",
+    "task": "Add Dark Mode",
+    "description": "Store the user's preference in localStorage, update CSS variables.",
+    "deadline": "26 March 2025",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "company": "SwiftPay",
+    "task": "Optimize Home Page",
+    "description": "Debug using Chrome DevTools, check for overlapping elements.",
+    "deadline": "27 March 2025",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "company": "Meta",
+    "task": "Add new emoji :) ",
+    "description": "Debug using Chrome DevTools, check for overlapping elements.",
+    "deadline": "28 March 2025",
+    "status": "Completed"
+  },
+  {
+    "id": 5,
+    "company": "Google LLC",
+    "task": "Integrate OpenAI API",
+    "description": "Debug using Chrome DevTools, check for overlapping elements.",
+    "deadline": "29 March 2025",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "company": "Glassdoor",
+    "task": "Improve Job Searching",
+    "description": "Debug using Chrome DevTools, check for overlapping elements.",
+    "deadline": "30 March 2025",
+    "status": "Completed"
+  }
+]

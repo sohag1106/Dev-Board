@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f0f2f7] ">
+    <header class="flex  bg-white justify-between items-center p-[1.25rem] lg:mx-[8.75rem]">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="" srcset="">
+            <p class="text-[2rem] font-[280]">Dev <span class="font-[680]">Board</span></p>
+        </div>
+        <div class="flex items-center  gap-[2.5rem]">
+            <div class="flex justify-center items-center gap-[0.7rem]">
+                <div class="w-[2rem] h-[2rem]">
+                    <img src="assets/checkbox.png" alt="" srcset="">
+                </div>
+                <p id="increment" class="font-[670] text-[2rem]">32</p>
+            </div>
+            <button id="randomColor" class="cursor-pointer">
+                <img src="assets/theme-btn.png" alt="" srcset="">
+            </button>
+        </div>
+    </header>
+    <main class="flex p-[1.25rem] mt-[1.25rem] gap-[1.25rem] rounded-[0.9375rem] lg:mx-[8.75rem] bg-white flex-col lg:flex-row">
+        <section class="main_body flex-[3]">
+            <div class="flex flex-col lg:flex-row gap-[1.5rem]">
+                <div class="flex rounded-[0.75rem] bg-[#f4f7ff] justify-center items-center gap-[1.25rem] p-[2rem]">
+                    <div class="w-[2rem] h-[2rem]">
+                        <img src="assets/checkbox.png" alt="" srcset="">
+                    </div>
+                    <div class="font-[500]">
+                        <p class="inline-block opacity-[0.8]">Task Assigned</p>
+                        <span id="decrement" class="font-bold text-[2rem]">06</span>
+                    </div>
+                </div>
+                <div id="Discover" class="flex cursor-pointer justify-center items-center gap-[2.0625rem] text-white rounded-[0.75rem] p-[2.125rem]"
+                    style="background: linear-gradient(131deg, #485ff3 0%, #7a8bf8 53%, #9ba8f8 100%);">
+                    <div>
+                        <img src="assets/board.png" alt="" srcset="">
+                    </div>
+                    <p class="font-[500] text-[1.5rem]">Discover Something New Today!</p>
+                </div>
+                <div class="flex rounded-[0.75rem] p-[2rem] bg-[#f4f7ff] justify-center items-center gap-2">
+                    <div class="p-[1.125rem]">
+                        <img src="assets/calender.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <p id="realDate1" class="inline-block font-[700] text-[1.375rem]"></p>
+                        <p id="realDate" class="inline-block font-[700] text-[1.375rem]"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="taskBody" class="bg-white mt-[1.5rem] rounded-[0.75rem] grid max-sm:grid-cols-1 max-md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+        </section>
+        <section class="right_body p-5 rounded-[0.75rem] flex-1 bg-[#f4f7ff]">
+            <div class="flex justify-center items-center flex-col gap-4">
+                <div class="flex justify-center items-center gap-4">
+                    <img src="assets/activity.png" alt="" srcset="">
+                    <p class="text-[1.25rem] font-[500]">Activity Log</p>
+                </div>
+                <div>
+                    <span id="removeBtn" class="bg-[#3752fd] px-5 py-3 rounded-[0.5rem] cursor-pointer text-white">Clear History</span>
+                </div>
+            </div>
+            <hr class="border-dashed mt-8 border-[0.05rem] my-[1rem]">
+            <div>
+                <div class="rounded-[0.5rem] p-3">
+                    <div id="add" class="bg-white flex gap-5 flex-col p-3 rounded-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
