@@ -97,7 +97,7 @@ const disabledBtn = (taskId) => {
   alert("Board updated successfully");
   employeeTask++;
   if (employeeTask === 6) {
-    alert("Congrats! You have completed all the tasks");
+    alert("Congrats.... !You have completed all the tasks");
   }
 };
 
@@ -135,12 +135,12 @@ const randomColor = document.getElementById("randomColor");
 const body = document.querySelector("body");
 
 randomColor.addEventListener("click", function () {
-  const RandomColor = Math.floor(Math.random() * 16777215).toString(16);
+  const RandomColor = Math.floor(Math.random() * 1677).toString(16);
   body.style.backgroundColor = "#" + RandomColor;
 });
 
 const Discover = document.getElementById("Discover");
 Discover.addEventListener("click", function () {
-  console.log("hello");
+  
   window.location.href = "question.html";
 });
